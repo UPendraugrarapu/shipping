@@ -5,3 +5,11 @@ params: "CART_ENDPOINT:prod.shipping.cart_endpoint,DB_HOST:prod.rds.endpoint"
 schemaLoadJob:
   create: true
   type: mongo
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 600Mi
+  requests:
+    cpu: 400m
+  memory: 450Mi
